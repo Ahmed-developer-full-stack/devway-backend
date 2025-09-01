@@ -28,5 +28,5 @@ resultsRoutes(app);
 attachmentsRoutes(app);
 adminsRoutes(app);
 
-app.listen(3000);
-console.log("🚀 Backend running on http://localhost:3000");
+// Vercel serverless لا يحتاج listen
+export default app;
