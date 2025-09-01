@@ -1,5 +1,5 @@
 // routes/admins.ts
-import { supabase } from "../../supabase";
+import { supabase } from "../supabase";
 import bcrypt from "bcryptjs";
 
 

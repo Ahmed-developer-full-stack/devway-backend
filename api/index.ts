@@ -1,13 +1,13 @@
 import { Elysia } from "elysia";
 import cors from "@elysiajs/cors";
-import { getProfilesHandler, deleteProfileHandler, getProfileByIdHandler, updatePasswordHandler } from "../src/routes/getProfiles";
-import { registerHandler } from "../src/routes/register";
-import { loginHandler } from "../src/routes/login";
-import { examsRoutes } from "../src/routes/exams";
-import { questionsRoutes } from "../src/routes/questions";
-import { resultsRoutes } from "../src/routes/resultRoutes";
-import { attachmentsRoutes } from "../src/routes/attachments";
-import { adminsRoutes } from "../src/routes/admins";
+import { getProfilesHandler, deleteProfileHandler, getProfileByIdHandler, updatePasswordHandler } from "./getProfiles";
+import { registerHandler } from "./routes/register";
+import { loginHandler } from "./login";
+import { examsRoutes } from "./routes/exams";
+import { questionsRoutes } from "./questions";
+import { resultsRoutes } from "./routes/resultRoutes";
+import { attachmentsRoutes } from "./attachments";
+import { adminsRoutes } from "./admins";
 
 const app = new Elysia();
 
@@ -28,4 +28,5 @@ resultsRoutes(app);
 attachmentsRoutes(app);
 adminsRoutes(app);
 
+// Vercel serverless لا يحتاج listen
 export default app;
