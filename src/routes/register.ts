@@ -1,5 +1,5 @@
-import { supabase } from "../supabase";
-import bcrypt from "bcrypt";
+import { supabase } from "../../supabase";
+import bcrypt from "bcryptjs";
 
 export async function registerHandler({ body }: any) {
   const { full_name, email, password, confirm_password, phone } = body;

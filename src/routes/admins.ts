@@ -1,6 +1,7 @@
 // routes/admins.ts
-import { supabase } from "../supabase";
-import bcrypt from "bcrypt";
+import { supabase } from "../../supabase";
+import bcrypt from "bcryptjs";
+
 
 export const adminsRoutes = (app: any) => {
 

@@ -1,5 +1,5 @@
 import { t } from "elysia";
-import { supabase } from "../supabase";
+import { supabase } from "../../supabase";
 
 export const questionsRoutes = (app: any) => {
     // إضافة سؤال

@@ -1,5 +1,6 @@
-import { supabase } from "../supabase";
-import bcrypt from "bcrypt";
+import { supabase } from "../../supabase";
+import bcrypt from "bcryptjs";
+
 
 export async function loginHandler({ body }: any) {
   const { email, password } = body;

@@ -1,5 +1,6 @@
-import { supabase } from "../supabase";
-import bcrypt from "bcrypt";
+import { supabase } from "../../supabase";
+import bcrypt from "bcryptjs";
+
 
 export const getProfilesHandler = async () => {
   const { data, error } = await supabase.from("profiles").select("*");
